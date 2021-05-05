@@ -39,7 +39,7 @@ namespace DataStructure
             }
             while(temp != null)
             {
-                Console.WriteLine(temp.data + " ");
+                Console.Write(temp.data + " ");
                 temp = temp.next;
             }
         }
