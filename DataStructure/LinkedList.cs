@@ -43,5 +43,37 @@ namespace DataStructure
                 temp = temp.next;
             }
         }
+        internal void AddInReverseOrder(int data)
+        {
+            Node newNode = new Node(data);
+            if (this.head == null)
+            {
+                this.head = newNode;
+            }
+            else
+            {
+                Node temp = this.head;
+                head = newNode;
+                head.next = temp;
+            }
+            Console.WriteLine("{0} inserted into linked list", newNode.data);
+        }
+        internal void InsertAtParticularPosition(int position,int data)
+        {
+            if(position < 1)
+            {
+                Console.WriteLine("Position should not be less than 1.");
+            }
+            if(position == 1)
+            {
+                var newNode = new Node(data);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+
+            }
+        }
     }
 }
