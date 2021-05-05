@@ -58,7 +58,7 @@ namespace DataStructure
             }
             Console.WriteLine("{0} inserted into linked list", newNode.data);
         }
-        internal void InsertAtParticularPosition(int position,int data)
+        internal Node InsertAtParticularPosition(int position,int data)
         {
             if(position < 1)
             {
@@ -72,8 +72,21 @@ namespace DataStructure
             }
             else
             {
-
+                while(position-- != 0)
+                {
+                    if(position == 1)
+                    {
+                        Node node = new Node(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if(position != 1)         
+                    Console.WriteLine("Position out of range");               
             }
+            return head;
         }
     }
 }
