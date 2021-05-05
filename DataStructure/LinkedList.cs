@@ -58,22 +58,6 @@ namespace DataStructure
             }
             Console.WriteLine("{0} inserted into linked list", newNode.data);
         }
-        internal void InsertAtParticularPosition(int position,int data)
-        {
-            if(position < 1)
-            {
-                Console.WriteLine("Position should not be less than 1.");
-            }
-            if(position == 1)
-            {
-                var newNode = new Node(data);
-                newNode.next = this.head;
-                head = newNode;
-            }
-            else
-            {
-
-            }
-        }
+     
     }
 }
