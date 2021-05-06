@@ -22,6 +22,7 @@ namespace DataStructure
             list.InsertAtParticularPosition(2, 000);
             list.RemoveFirstNode();
             list.RemoveLastNode();
+            list.Search(000);
             list.Display();
 
             Console.ReadKey();
