@@ -25,14 +25,22 @@ namespace DataStructure
             //list.Search(000);
             //list.Display();
 
-            Stack stack = new Stack();
-            stack.Push(5);
-            stack.Push(10);
-            stack.Push(3);
-            stack.Pop();
-            stack.Peek();
-            stack.IsEmpty();
-            stack.Display();
+            //Stack stack = new Stack();
+            //stack.Push(5);
+            //stack.Push(10);
+            //stack.Push(3);
+            //stack.Pop();
+            //stack.Peek();
+            //stack.IsEmpty();
+            //stack.Display();
+
+            Queue queue = new Queue();
+            queue.Enqueue(2);
+            queue.Enqueue(4);
+            queue.Enqueue(7);
+            queue.Enqueue(8);
+            queue.Dequeue();
+            queue.Display();
 
             Console.ReadKey();
         }
