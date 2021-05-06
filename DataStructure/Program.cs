@@ -20,6 +20,7 @@ namespace DataStructure
             list.AddInReverseOrder(99);
             list.AddInReverseOrder(999);
             list.InsertAtParticularPosition(2, 000);
+            list.RemoveFirstNode();
             list.Display();
 
             Console.ReadKey();
